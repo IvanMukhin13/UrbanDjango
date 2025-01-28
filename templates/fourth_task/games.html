@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{pagename}}</title>
+</head>
+<body>
+    <h1>{{pagename}}</h1>
+    <h2>
+        {%  include 'fourth_task/menu.html' %}
+        {% for game in content %}
+        <ul>
+            <li>{{game}}<button>Купить</button></li>
+        </ul>
+        {% endfor %}
+    </h2>
+    <h2>
+        <a href="/platform"><button>Вернуть обратно</button>
+        </a>
+    </h2>
+</body>
+</html>
