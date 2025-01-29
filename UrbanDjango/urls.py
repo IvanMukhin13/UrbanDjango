@@ -16,11 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from task5.views import sign_up_by_django, sign_up_by_html
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('task2/', include('task2.urls')),
     # path('platform/', include('task3.urls')),
-    path('platform/', include('task4.urls')),
-
+    # path('platform/', include('task4.urls')),
+    path('platform/', include('task5.urls')),
+    path('by_django', sign_up_by_django),
+    path('by_html', sign_up_by_html),
 ]

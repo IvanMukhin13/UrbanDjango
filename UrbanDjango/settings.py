@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'task2.apps.Task2Config',
     'task3.apps.Task3Config',
     'task4.apps.Task4Config',
-]
+    'task5.apps.Task5Config',
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
